@@ -11,7 +11,6 @@ const Button = (props) => (
 
 Button.propTypes = {
   onClick: PropTypes.func,
-  disabled: PropTypes.bool,
   type: PropTypes.oneOf(['primary', 'secondary', 'success', 'error', 'warning']),
   mode: PropTypes.oneOf(['filled', 'ghost', 'minimal', 'flat']),
   title: PropTypes.string,
@@ -25,7 +24,6 @@ Button.propTypes = {
 
 Button.defaultProps = {
   iconDirection: 'left',
-  disabled: false,
   mode: 'filled',
   size: 'm',
   stretched: true,
